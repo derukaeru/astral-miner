@@ -11,13 +11,23 @@ config_version=5
 [application]
 
 config/name="astral-miner"
+run/main_scene="uid://c71jj7i4mgah1"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventBus="*uid://do8t2eejmquah"
+GameManager="*uid://c53gr7pr6fuir"
+Registry="*uid://30oojkmjw6te"
+SceneChanger="*uid://cdd1hrng05wub"
+Util="*uid://wee2c5u32e8s"
+
 [display]
 
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/size/viewport_height=904
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
 
 [dotnet]
 
